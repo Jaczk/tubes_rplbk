@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(6, 83, 128);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+}
+
+.NavBar {
+  width: 100%;
+  background-color: rgb(78, 240, 199);
+}
+
+.ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.li {
+  margin-right: 50px;
 }
 
 .App-link {
@@ -32,6 +47,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
