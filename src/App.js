@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Perfume from "./pages/fragrances";
 import Fragrance from "./pages/perfume";
 import About from "./pages/about";
+import User from "./pages/userPage";
 import FragranceDetail from "./pages/perfumeDetail";
 
 export default function App() {
@@ -23,9 +24,9 @@ export default function App() {
             <li className="li">
               <Link to="/about">About</Link>
             </li>
-            {/* <li className="li">
-              <Link to="/input">inputType</Link>
-            </li> */}
+            <li className="li">
+              <Link to="/user">User</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -33,7 +34,7 @@ export default function App() {
           <Route path="/perfumes" exact element={<Fragrance />} />
           <Route path="/about" exact element={<About />} />
           <Route path="/perfumes/:productId" exact element={<FragranceDetail />} />
-          
+          <Route path="/user" exact element={<User />} />
         </Routes>
       </div>
     </Router>
