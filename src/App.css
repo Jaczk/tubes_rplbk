@@ -52,3 +52,30 @@
     transform: rotate(360deg);
   }
 }
+.containCard{
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
+.Cardcon{
+  color: black;
+  font-size: medium;
+  flex-shrink: 0;
+  width: 600px;
+  height: 200px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 12px;
+}
