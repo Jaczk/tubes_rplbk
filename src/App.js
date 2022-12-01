@@ -14,20 +14,10 @@ export default function App() {
     <Router>
       <div className="App-header">
         <nav className="NavBar">
-          <ul className="ul">
-            <li className="li">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="li">
-              <Link to="/perfumes">Perfume</Link>
-            </li>
-            <li className="li">
-              <Link to="/about">About</Link>
-            </li>
-            <li className="li">
-              <Link to="/user">User</Link>
-            </li>
-          </ul>
+          <Link to="/" className='LinkRoutes'>Home</Link>
+          <Link to="/perfumes" className='LinkRoutes'>Perfume</Link>
+          <Link to="/about" className='LinkRoutes'>About</Link>
+          <Link to="/user" className='LinkRoutes'>User</Link>
         </nav>
         <Routes>
           <Route path="/" exact element={<Perfume />} />
