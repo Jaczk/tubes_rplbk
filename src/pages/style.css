@@ -9,10 +9,11 @@
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    color: #2e100f;
 }
 
 .App-header {
-    background-color: rgb(6, 83, 128);
+    background-color: #e6f3f3;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,14 +24,46 @@
 
 }
 
-.list-title-wrapper {
+.abouts {
     display: flex;
+    width: 70%;
+    height: 80%;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.5rem;
 }
 
-.NavBar {
+
+.abouts1 {
+    display: flex;
     width: 100%;
-    background-color: rgb(78, 240, 199);
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.NavBar{
+    z-index: 1;
+    position: sticky;
+}
+
+.titleTypo{
+    padding: 15px;
+    margin-left: 9%;
+}
+.conCarous{
+    z-index: 0;
+}
+.carous{
+    height: 72%;
+    width: 100%;
+    margin: auto;
+}
+.prodYear{
+    height: 40vh;
+    width: 100%;
+}
+.cardYear{
+    height: 40px;
+    width: 100%;
 }

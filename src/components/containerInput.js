@@ -43,7 +43,7 @@ export default function ConInput() {
         </Button>
         <div className="containCard">
           {result.map((post) => (
-            <div class="row d-flex justify-content-center">
+            <div class="d-flex justify-content-start">
               <div class="col-md-5">
                 <Card key={post.nim} className="Cardcon">
                   <Card.Body>
