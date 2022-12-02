@@ -3,7 +3,14 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import { Card, IconButton, List, Paper, Typography } from "@mui/material";
+import {
+  Card,
+  IconButton,
+  List,
+  Paper,
+  TextField,
+  Typography,
+} from "@mui/material";
 import ListItemProduct from "../components/ListItemProduct";
 import { useEffect, useState } from "react";
 import { AddCircle } from "@mui/icons-material";
@@ -67,14 +74,26 @@ function Perfume() {
     <div className="App">
       <div className="list-container">
         <div className="d-flex justify-content-between">
-          <div className="titleTypo">
-            <Typography variant="h4">Fragrances</Typography>
-            <IconButton onClick={openDialog}>
-              <AddCircle />
-            </IconButton>
-          </div>
+          <Typography variant="h4">Fragrances</Typography>
+          <TextField
+            id="outlined-basic"
+            label="Search Products"
+            variant="outlined"
+            sx={{ m: 1, width: "50ch" }}
+          ></TextField>
+          <IconButton onClick={openDialog}>
+            <AddCircle />
+          </IconButton>
         </div>
-        <Card elevation={2} style={{ maxHeight: "700px", overflow: "auto", width: "80%", margin: "auto" }}>
+        <Card
+          elevation={2}
+          style={{
+            maxHeight: "700px",
+            overflow: "auto",
+            width: "80%",
+            margin: "auto",
+          }}
+        >
           <List>
             {products.map((d, idx) => (
               <ListItemProduct

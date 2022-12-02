@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import ShowTeam from "../components/showTeam";
 import { Button, Container, Image } from "react-bootstrap";
-import kazuha from "../img/jisoo2.jpg";
+import kazuha from "../img/perfumemod.jpg";
 
 const About = () => {
   return (
