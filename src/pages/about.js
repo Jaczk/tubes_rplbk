@@ -8,15 +8,15 @@ const About = () => {
   return (
     <div className="App">
       <div className="abouts">
-        <Container>
+        <Container >
           <Container className="Con">
             <Image
               src={kazuha}
               style={{
                 textAlign: "center",
                 height: "100%",
-                width: "100%",
-                objectFit: "contain",
+                maxWidth: "100%",
+                objectFit: "cover",
               }}
               alt="nakamura"
               class="img-responsive center-block"

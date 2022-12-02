@@ -24,6 +24,7 @@ function Perfume() {
   const [newProducts, setNewProducts] = useState([]);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [products, setProducts] = useState([]);
+  const [searchProd, setSearchProd] = useState("");
 
   useEffect(() => {
     async function getProducts() {
@@ -80,6 +81,7 @@ function Perfume() {
             label="Search Products"
             variant="outlined"
             sx={{ m: 1, width: "50ch" }}
+            onChange={(e) => setSearchProd(e.target.value)}
           ></TextField>
           <IconButton onClick={openDialog}>
             <AddCircle />
@@ -95,17 +97,36 @@ function Perfume() {
           }}
         >
           <List>
-            {products.map((d, idx) => (
-              <ListItemProduct
-                key={d.id}
-                image={d.thumbnail}
-                primaryText={`$${d.price} | ${d.title}`}
-                secondaryText={`${d.description}`}
-                rating={`${d.rating}`}
-                onDelete={() => handleDeleteProducts(d.id, idx)}
-              />
-            ))}
-            {newProducts.map((d, idx) => (
+            {products
+              .filter((value) => {
+                if (searchProd === "") {
+                  return value;
+                } else if (
+                  value.title.toLowerCase().includes(searchProd.toLowerCase())
+                ) {
+                  return value;
+                }
+              })
+              .map((d, idx) => (
+                <ListItemProduct
+                  key={d.id}
+                  image={d.thumbnail}
+                  primaryText={`$${d.price} | ${d.title}`}
+                  secondaryText={`${d.description}`}
+                  rating={`${d.rating}`}
+                  onDelete={() => handleDeleteProducts(d.id, idx)}
+                />
+              ))}
+            {newProducts
+              .filter((value) => {
+                if (searchProd === "") {
+                  return value;
+                } else if (
+                  value.title.toLowerCase().includes(searchProd.toLowerCase())
+                ) {
+                  return value;
+                }
+              }).map((d, idx) => (
               <ListItemProduct
                 key={d.id}
                 primaryText={`$${d.price} | ${d.title}`}
