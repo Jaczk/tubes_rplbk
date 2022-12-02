@@ -8,6 +8,7 @@ import perfume1 from "../img/perfume2.jpg";
 import perfume2 from "../img/perfume6.jpg";
 import perfume3 from "../img/perfume5.png";
 import "./style.css";
+import Photo from "../components/photo"
 
 export default function HomePage() {
   return (
@@ -42,55 +43,15 @@ export default function HomePage() {
         <Container className="prodYear">
           <p className="fs-3">Our Products Of The Year</p>
           <Row md={3}>
-            <Container className="cardYear">
-              <Col>
-                <Image
-                  src={perfume1}
-                  style={{
-                    textAlign: "center",
-                    height: "100%",
-                    width: "100%",
-                    objectFit: "contain",
-                  }}
-                  alt="nakamura"
-                  class="img-responsive center-block"
-                  rounded="true"
-                />
-              </Col>
-            </Container>
-
-            <Container className="cardYear">
-              <Col>
-                <Image
-                  src={perfume2}
-                  style={{
-                    textAlign: "center",
-                    height: "100%",
-                    width: "100%",
-                    objectFit: "contain",
-                  }}
-                  alt="nakamura"
-                  class="img-responsive center-block"
-                  rounded="true"
-                />
-              </Col>
-            </Container>
-            <Container className="cardYear">
-              <Col>
-                <Image
-                  src={perfume3}
-                  style={{
-                    textAlign: "center",
-                    height: "100%",
-                    width: "100%",
-                    objectFit: "contain",
-                  }}
-                  alt="nakamura"
-                  class="img-responsive center-block"
-                  rounded="true"
-                />
-              </Col>
-            </Container>
+            <Photo
+            image={perfume1}
+            />
+            <Photo
+            image={perfume2}
+            />
+            <Photo
+            image={perfume3}
+            />
           </Row>
         </Container>
       </Container>
