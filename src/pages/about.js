@@ -22,11 +22,12 @@ const About = () => {
               class="img-responsive center-block"
               rounded="true"
             />
-            <h1>Eau de toilette</h1>
-            <p className="fs-5">
-              Berikut merupakan aplikasi Katalog Parfum sebagai tugas akhir
-              praktikum RPLBK{" "}
+
+            <h1 style={{display: 'flex',color : 'black', justifyContent: 'center'}}>Eau de toilette</h1>
+            <p className="fs-5" style={{display: 'flex',color : 'black', justifyContent: 'center', textAlign : "center"}}>
+              Aplikasi Katalog Parfum yang menyediakan berbagai macam jenis parfum ini dibuat sebagai tugas akhir praktikum RPLBK{" "}
             </p>
+
           </Container>
           <Container className="timShow">
             <ShowTeam />
