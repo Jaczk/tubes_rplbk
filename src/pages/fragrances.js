@@ -75,15 +75,16 @@ function Perfume() {
     <div className="App">
       <div className="list-container">
         <div className="d-flex justify-content-between">
-          <Typography variant="h4">Fragrances</Typography>
+          <Typography variant="h4" style={{marginTop: "55px"}}>Fragrances</Typography>
           <TextField
             id="outlined-basic"
             label="Search Products"
             variant="outlined"
+            style={{marginTop: "50px"}}
             sx={{ m: 1, width: "50ch" }}
             onChange={(e) => setSearchProd(e.target.value)}
           ></TextField>
-          <IconButton onClick={openDialog}>
+          <IconButton style={{marginTop: "45px"}} onClick={openDialog}>
             <AddCircle />
           </IconButton>
         </div>

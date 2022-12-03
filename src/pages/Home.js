@@ -35,13 +35,13 @@ export default function HomePage() {
             <img className="d-block w-100" src={jisoo2} alt="Third slide" />
 
             <Carousel.Caption>
-              <h3>Find Your Beauty</h3>
-              <p>We Will Guide You to LearnMore About Yourself</p>
+              <h3>Find Your Own Beauty</h3>
+              <p>We Will Guide You to Learn More About Yourself</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
         <Container className="prodYear">
-          <p className="fs-3">Our Products Of The Year</p>
+          <p className="fs-3">Products Of The Year</p>
           <Row md={3}>
             <Photo
             image={perfume1}

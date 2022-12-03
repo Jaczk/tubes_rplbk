@@ -6,7 +6,7 @@ import kazuha from "../img/perfumemod.jpg";
 
 const About = () => {
   return (
-    <div className="App">
+    
       <div className="abouts">
         <Container >
           <Container className="Con">
@@ -33,7 +33,7 @@ const About = () => {
           </Container>
         </Container>
       </div>
-    </div>
+    
   );
 };
 

@@ -8,6 +8,10 @@ import HomePage from "./pages/Home";
 import About from "./pages/about";
 import User from "./pages/userPage";
 import Clock from "react-live-clock";
+import logo from "./img/logo.png"
+
+
+
 
 export default function App() {
   return (
@@ -16,6 +20,7 @@ export default function App() {
         <nav className="NavBar">
           <div className="d-flex justify-content-between">
             <div>
+            <img src={logo} height={35} margin-right={2} />
               <Link to="/" className="LinkRoutes">
                 Home
               </Link>
@@ -47,4 +52,5 @@ export default function App() {
       </div>
     </Router>
   );
+  
 }
